@@ -1,11 +1,13 @@
 ## Implementation
 
+CURRENT DEVELOPMENTS ONLY INCLUDE DESCRIPTION + TITLE BASED SEMANTIC SEARCH INDEXING.
+
 Experimenting with the Berkeleytime site, it looks like terms like “cs70” register well with the search engine.
 
 Course ID/number indexing is already developed and should be #1 priority in the algorithm.
 
 - Users won’t look up anything different from cs70, 70, etc when looking for a specific course.
-- It also looks like course popularity is properly indexed for. Should be prioritized with course/number indexing
+- It also looks like course popularity is properly indexed for. Should be prioritized with course/number indexing.
 
 Secondary to this should be keyword based semantic search indexing.
 
