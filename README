@@ -1,0 +1,25 @@
+## Implementation
+
+Experimenting with the Berkeleytime site, it looks like terms like “cs70” register well with the search engine.
+
+Course ID/number indexing is already developed and should be #1 priority in the algorithm.
+
+- Users won’t look up anything different from cs70, 70, etc when looking for a specific course.
+- It also looks like course popularity is properly indexed for. Should be prioritized with course/number indexing
+
+Secondary to this should be keyword based semantic search indexing.
+
+Specialized Berkeley terms like cs70 should not be considered within semantic indexing and must be considered separately in the first step. These should be given priority within search.
+
+Keyword Based SS Index Pipeline:
+
+1. Preprocessing:
+    1. Text normalization
+        1. Convert text to lowercase, remove stopwords, punctuation, special characters
+        2. Tokenization: Break down the text into individual tokens
+        3. Stemming/Lemmatization (important): Reduce words to their base forms (e.g. “running” -> “run”)
+2. Synonym Expansion
+    1. Synonym dictionary integration for search terms using WordNet
+3. Entity Recognition + Contextual Understanding + Indexing
+    1. BERT will be used for this.
+4. Ranking
